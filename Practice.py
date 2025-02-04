@@ -251,13 +251,16 @@ p1=Person('Pranesh',21)
 print(p1.name)
     
 
-
 class Animal:
     def __init__(self, name):
         self.name = name
     
     def speak(self):
         print(f"{self.name} makes a sound")
+
+class Nothing(Animal):
+    pass #pass without assigning anything
+
 
 class Dog(Animal):
     def __init__(self, name, breed):
